@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Resume from './components/Resume';
 import Gallery from './components/Gallery';
 import Project from './components/Project';
+import Nav from './components/Nav';
 
 
 function App() {
@@ -36,8 +37,18 @@ function App() {
 
   return (
     //add nav,footer,gallery
-    <div className="App">
-      <Contact />
+    <div>
+      <Nav
+      categories={categories}
+      setCurrentCategory={setCurrentCategory}
+      currentCategory={currentCategory}
+      contactSelected={contactSelected}
+      setContactSelected={setContactSelected}
+      ></Nav>
+      <main>
+       <Gallery currentCategory={currentCategory}></Gallery> 
+      </main>
+      <Footer></Footer>
     </div>
   );
 }

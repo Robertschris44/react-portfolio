@@ -7,7 +7,7 @@ function Nav(props) {
         setCurrentCategory,
         contactSelected,
         currentCategory,
-        setContactedSelected
+        setContactSelected
     } = props;
 
 

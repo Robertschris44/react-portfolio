@@ -1,8 +1,11 @@
-import react from 'react'
+import React,{useState} from 'react';
 // import photo from '' pass in photo
+import {validateEmail, capitalizeFirstLetter} from '../.././utils/helpers';
 
 
-const Contact = () => {
+function Contact(){
+
+    const[fromState, setFormState] = useState({name: '',email:'',message:''});
     return(
         <section className='contact-container'>
             <div>

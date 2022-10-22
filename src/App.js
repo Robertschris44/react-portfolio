@@ -9,31 +9,24 @@ import Nav from './components/Nav';
 
 
 function App() {
-
   const [categories] = useState([
     {
-      name: "About me",
-      description:
-      "Who am I?",
+      name: "About"
     },
     {
-      name: "Contact",
-      description:
-      "Reach out:",
+      name: "Contact"
     },
     {
-      name: "Portfolio",
-      description: 
-      "Hello",
+      name: "Portfolio"
     },
     {
-      name: "Resume",
-      description: "Download Resume"
+      name: "Resume"
     }
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const [contactSelected, setContactSelected] = useState(false);
+
 
   return (
     //add nav,footer,gallery
@@ -47,10 +40,38 @@ function App() {
       ></Nav>
       <main>
        <Gallery currentCategory={currentCategory}></Gallery> 
+      <div>
+        {(() => {
+          console.log(currentCategory)
+          switch (currentCategory.name) {
+            case "About":
+              return <About />
+              case "Contact":
+                return <Contact />
+                case "Resume":
+                  return <Resume />
+                  case "Project":
+                    return <Project />
+                    default:
+                      return "not found"
+          }
+        }) ()
+        }
+      </div>
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
-}
+
+
+};
+
+  
+
+
+
+
+  
+
 
 export default App;

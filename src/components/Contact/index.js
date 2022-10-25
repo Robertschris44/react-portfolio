@@ -39,22 +39,22 @@ function Contact(){
             }
             if(!errorMessage){setFormState({...formState,[event.target.name]:(event.target.value).trim()})}
         }
-    }
+    
     return(
         <section className='contact-container'>
             <h1 className='section-title'>Contact Me</h1>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor='name'>Your Name:</label>
-                    <input type="text" name="name" onBlur={handleChange}></input>
+                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}></input>
                 </div>
                 <div>
                     <label htmlFor='email'>Your email address:</label>
-                    <input type="email" name='email' onBlur={handleChange}></input>
+                    <input type="email" name='email' defaultValue={email} onBlur={handleChange}></input>
                 </div>
                 <div>
                     <label htmlFor='message'>Message:</label>
-                    <textarea name='message' rows="4" onBlur={handleChange}></textarea>
+                    <textarea name='message' rows="4" defaultValue={message} onBlur={handleChange}></textarea>
                 </div>
 
                 <div className=''> 
@@ -71,7 +71,8 @@ function Contact(){
             
 
         </section>
-    );
+    )};
+                
 
 
 

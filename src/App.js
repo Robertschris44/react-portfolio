@@ -3,7 +3,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
-import Gallery from './components/Gallery';
+import Portfolio from './components/Portfolio';
 import Project from './components/Project';
 import Nav from './components/Nav';
 
@@ -39,7 +39,7 @@ function App() {
       setContactSelected={setContactSelected}
       ></Nav>
       <main>
-       <Gallery currentCategory={currentCategory}></Gallery> 
+       <Portfolio currentCategory={currentCategory}></Portfolio> 
       <div>
         {(() => {
           console.log(currentCategory)

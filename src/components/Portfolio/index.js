@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import Project from '../Project';
-import imgAbsence from '../../assets/Absence snippet.jpg'
-import imgEmpoloyeetracker from '../../assets/tracker snippet'
-import imgNewyorktimes from '../../assets/newyork snippet'
-import imgNotetaker from '../../assets/Note taker snippet'
-import imgRunbuddy from '../../assets/Runbuddy snippet'
-import imgScheduler from '../../assets/Scheduler screenshot'
+import imgAbsence from '../../assets/Absence-snippet.jpg'
+import imgEmpoloyeetracker from '../../assets/tracker-snippet.jpg'
+import imgNewyorktimes from '../../assets/newyork-snippet.jpg'
+import imgNotetaker from '../../assets/Note-taker-snippet.jpg'
+import imgRunbuddy from '../../assets/Runbuddy-snippet.jpg'
+import imgScheduler from '../../assets/Scheduler-screenshot.jpg'
 
 
  function Portfolio() {
@@ -61,7 +61,7 @@ import imgScheduler from '../../assets/Scheduler screenshot'
                         <Project
                         title={project.title}
                         href={project.href}
-                        imgSrc={project.imgSrc}
+                        imgSrc={project.imgage}
                         gitHub={project.gitHub}
                         />
                     ))}

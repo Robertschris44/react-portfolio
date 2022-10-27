@@ -1,9 +1,12 @@
 import React from "react";
+import headshot from '../../assets/headshot.jpg';
 
 function About() {
     return(
+       
         <section>
             <h1 id="about">About Me</h1>
+            <img src={headshot} className="my-2" style={{width: "50"}} alt="Chris professional pic"/>
             <p>I am a full stack web developer. My experience: Javascript, HTML, Bootstrap, CSS, MongoDB, Express.js, React.js, Node.js, MySQL, Sequelize and GraphQL. </p>
             <br />
             <p>After wanting to be in the tech field for many years, I have decided to take the leap of faith and make a career change to be a web developer. I have a bachelors in Business Administration from Sam Houston University. I am currently a claims adjuster, licensed in over 5 states! I took this full stack development course because I want a new challenging career! </p>
